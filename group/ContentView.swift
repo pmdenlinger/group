@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack(spacing: 20){
+            Group{
+                
+//                Content to be grouped...
+                
+                VStack{
+                    Text("Hello")
+                    Text("World")
+                }
+                
+                HStack{
+                    Text("Welcome")
+                    Text("Guys")
+                }
+            }
+        }
     }
 }
 
